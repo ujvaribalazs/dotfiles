@@ -1,0 +1,37 @@
+return {
+  {
+    "benlubas/molten-nvim",
+    version = "^1.0.0",
+    lazy = false,
+    build = ":UpdateRemotePlugins",
+
+
+    init = function()
+      vim.g.molten_output_win_max_height = 20
+      vim.g.molten_auto_open_output = false
+    end,
+
+    keys = {
+      {
+        "<leader>mi",
+        ":MoltenInit<CR>",
+        desc = "Molten: init kernel",
+      },
+      {
+        "<leader>me",
+        ":MoltenEvaluateOperator<CR>",
+        desc = "Molten: evaluate",
+      },
+      {
+        "<leader>ml",
+        ":MoltenEvaluateLine<CR>",
+        desc = "Molten: evaluate line",
+      },
+      {
+        "<leader>mc",
+        ":MoltenReevaluateCell<CR>",
+        desc = "Molten: rerun cell",
+      },
+    },
+  },
+}

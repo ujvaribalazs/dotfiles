@@ -1,0 +1,60 @@
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
+local opt = vim.opt
+
+-- Megjelenés
+opt.number = true
+opt.relativenumber = true
+opt.cursorline = true
+opt.termguicolors = true
+opt.signcolumn = "yes"
+opt.wrap = false
+opt.scrolloff = 8
+opt.sidescrolloff = 8
+
+-- Behúzás
+opt.expandtab = true
+opt.shiftwidth = 4
+opt.tabstop = 4
+opt.softtabstop = 4
+opt.smartindent = true
+
+-- Keresés
+opt.ignorecase = true
+opt.smartcase = true
+opt.hlsearch = true
+opt.incsearch = true
+
+-- Ablakok
+opt.splitright = true
+opt.splitbelow = true
+
+-- Egér
+opt.mouse = "a"
+
+-- Rendszer clipboard
+opt.clipboard = "unnamedplus"
+
+-- Undo megőrzése
+opt.undofile = true
+
+-- Gyorsabb reakció
+opt.updatetime = 250
+opt.timeoutlen = 400
+
+-- Kódkiegészítés
+opt.completeopt = { "menu", "menuone", "noselect" }
+
+-- Láthatatlan karakterek
+opt.list = true
+opt.listchars = {
+    tab = "» ",
+    trail = "·",
+    nbsp = "␣",
+}
+
+-- Finom görgetés
+opt.smoothscroll = true
+
+

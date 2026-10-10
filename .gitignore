@@ -1,0 +1,12 @@
+# Tmux pluginok
+/tmux/plugins/
+
+# Biztonsági másolatok
+*.bak
+
+# Neovim munkamenetek
+Session.vim
+
+# Ideiglenes fájlok
+*.swp
+*.swo
